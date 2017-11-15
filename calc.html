@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калькулятор</title>
+    <script src="calc.js" type="text/javascript"></script>
+    <script src="jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body onload="onload()" >
+	<div class="main">
+		<div>
+			<input class="number" readonly type="text" id="number" > 
+		</div>
+		<div class= "panel">
+			<button class="press" onclick="number('7')">7</button>
+			<button class="press" onclick="number('8')">8</button>
+			<button class="press" onclick="number('9')">9</button>
+			<button class="press_input" onclick="operation_pressed('/')">/</button>
+		</div>
+		<div class= "panel">
+			<button class="press" onclick="number('4')">4</button>
+			<button class="press" onclick="number('5')">5</button>
+			<button class="press" onclick="number('6')">6</button>
+			<button class="press_input" onclick="operation_pressed('*')">*</button>
+		</div>
+		<div class= "panel">
+			<button class="press" onclick="number('1')">1</button>
+			<button class="press" onclick="number('2')">2</button>
+			<button class="press" onclick="number('3')">3</button>
+			<button class="press_input" onclick="operation_pressed('-')">-</button>
+		</div>
+		<div class= "panel">
+			<button class="press_input" onclick="clear_all()">CE</button>
+			<button class="press" onclick="number('0')">0</button>
+			<button class="press_input" onclick="result()">=</button>
+			<button class="press_input" onclick="operation_pressed('+')">+</button>
+		</div>
+	</div>
+</body>
+</html>
